@@ -11,19 +11,24 @@
 <body>
 
   <div id="container">
-    <h1>WIP</h1>
+    <h1>Electromagnetic Coilgun</h1>
     <div id="navbar">
         <center>
             <a href="../index.html">Home</a>
             <a href="../blog.html">Blog</a>
             <a href="../projects.html">Projects</a>
-            <a href="../images.html">Images</a>
         </center>
     </div>
-    <h1>WIP</h1>
+    <h2 id="electromagnetic-coilgun">Electromagnetic Coilgun</h2>
+    <p>One of my longest going projects and the most difficult one I have attempted is making an electromagnetic coilgun. A coilgun works under the same idea as a railgun. A large amount of energy is used to produce a magnetic field that propels a projectile down a barrel. However instead of this energy being provided by 2 long bars of metal. it is instead delivered by a series of copper coils to produce this high energy magnetic field. Through precise timing of the magnetic field you can have the projectile pulled to the center of the coil before shutting off the field. This results in the projectile being accelerated, combine this with 5 or so coils and you have a system that should be able to accelerate things to a very high speed.</p>
+    <h2 id="v1---this-will-be-a-1-week-project">V1 - “This will be a 1 week project”</h2>
+    <p>The biggest challenge to overcome with a coilgun is the fast switching of very high amperage and voltage. This ruled out mechanical relays due to there tendency to spark and the fact that they can be very slow. My first attempt at making a coilgun used solid state relays. Even though solid state is faster than conventional mechanical relays it was still not fast enough to control the magnetic field as precisely as I wanted to be able to do. While it was able to shoot something down the barrel (Shoot might be a stretch, more like “lightly propel”) While it was a great proof of concept and taught me a lot about how magnetic fields are created and the trouble they cause when they collapse. It was very slow and I was not happy with the design.</p>
+    <h2 id="v2---igbts-and-optocouplers">V2 - IGBTs and Optocouplers</h2>
+    <p>V1 sat in a box in my room for about a year taunting me from the wall. I do not like to leave unfinished projects so I decided to pick it back up in the summer after my freshman year of college. I decided to make the switch to IGBT transistors due to there MUCH faster response time and there ability to handle very high voltage and amperage. I also decided to start to CAD the overall design for the hardware at the same time as working on the electronics for it. I also made the switch from a large battery for power to a 300v very large (very scary) capacitor. The first revision did not have a large enough diode and the inductive kick from the collapsing magnetic field fried the IGBT and physically exploded the optocoupler that air-gapped the high voltage side from the low voltage side. Looking back it was a great idea to include those! However dispute those shortcomings it was a great proof of concept for IGBTs and even with the capacitor only charged to 100v it sent the projectile down with some good speed! Due to the cost of the IGBTs (about 25 dollars per) I did not continue testing.</p>
+    <h2 id="v2.5---better-diodes-and-real-designs">V2.5 - Better diodes and real designs</h2>
+    <p>This project was sparked again when I found some diodes online that could handle peek currents of 320A @ 600v. And for only about 1 dollar a diode too! This made me feel a bit better about sending my IGBTs to war and risking my wallet in the process.</p>
   <div id="footer">
     &copy; 2003 Landon Mello
   </div>
 </body>
-
 </html>
