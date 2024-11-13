@@ -72,3 +72,8 @@ body {
     margin-top: 10px;
     margin-bottom: 20px;
   }
+  .ascii-art {
+    padding: 20px;
+    display: inline-block;
+    white-space: pre;
+}
